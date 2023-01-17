@@ -14,6 +14,7 @@ USER deno
 # RUN deno cache deps.ts
 
 # Compile the main app so that it doesn't need to be compiled each startup/entry.
+COPY server.js .
 RUN deno cache server.js
 
 CMD ["run", "--allow-net", "server.js"]
