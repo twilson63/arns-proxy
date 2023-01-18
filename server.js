@@ -81,4 +81,4 @@ async function reqHandler(req) {
   return Response.redirect('https://pages.arweave.dev')
   */
 }
-serve(reqHandler, { port: 8100 });
+serve(reqHandler, { port: 3000 });
