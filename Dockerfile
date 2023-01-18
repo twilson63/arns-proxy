@@ -17,4 +17,6 @@ USER deno
 COPY server.js .
 RUN deno cache server.js
 
+ENTRYPOINT []
+
 CMD ["run", "--allow-net", "server.js"]
